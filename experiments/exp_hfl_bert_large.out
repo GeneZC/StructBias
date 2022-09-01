@@ -1,0 +1,479 @@
+>> training arguments:
+>> mode: train
+>> suffix: hfl-bert-large
+>> model_name: mug
+>> pretrained_model_name_or_path: plms/roberta-large-hfl
+>> train_data_name: lasted
+>> test_data_name: lasted
+>> data_dir: datasets
+>> output_dir: outputs/hfl_bert_large
+>> cache_dir: caches
+>> embed_learning_rate: 5e-05
+>> embed_weight_decay: 0.0
+>> learning_rate: 0.0005
+>> weight_decay: 0.0
+>> hidden_size: 1024
+>> sentiment_size: 4
+>> tag_size: 3
+>> batch_size: 16
+>> max_length: 150
+>> num_repeats: 1
+>> num_train_epochs: 20
+>> num_patience_epochs: 5
+>> warmup_ratio: 0.1
+>> max_grad_norm: 1.0
+>> log_interval: 50
+>> seed: 776
+>> use_adapter: False
+>> train_data_dir: datasets/lasted
+>> test_data_dir: datasets/lasted
+>> num_gpus: 1
+>> device: cuda
+>> model_class: <class 'models.mug.MuG'>
+>> input_fields: ['text_indices', 'text_mask', 'target_indices', 'opinion_indices', 'sentiment_indices']
+>> loading cached tokenizer from plms/roberta-large-hfl
+>> loading cached embedding from plms/roberta-large-hfl
+>> building data
+*************************training on lasted**************************
+###############################repeat 1###############################
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>epoch 1>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+iter step 50, train loss 2.6970, dev loss 2.0007, dev p 0.0000, dev r 0.0000, dev f1 0.0000
+iter step 100, train loss 2.1650, dev loss 1.2880, dev p 0.0000, dev r 0.0000, dev f1 0.0000
+iter step 150, train loss 1.4070, dev loss 1.0420, dev p 0.0000, dev r 0.0000, dev f1 0.0000
+iter step 200, train loss 1.0666, dev loss 0.8694, dev p 0.3102, dev r 0.0109, dev f1 0.0210
+>> new best
+iter step 250, train loss 0.8805, dev loss 0.7378, dev p 0.2101, dev r 0.1061, dev f1 0.1410
+>> new best
+iter step 300, train loss 0.7692, dev loss 0.7018, dev p 0.2936, dev r 0.0300, dev f1 0.0544
+iter step 350, train loss 0.7146, dev loss 0.6753, dev p 0.2625, dev r 0.2186, dev f1 0.2385
+>> new best
+iter step 400, train loss 0.6682, dev loss 0.6196, dev p 0.3713, dev r 0.2117, dev f1 0.2696
+>> new best
+iter step 450, train loss 0.6375, dev loss 0.6022, dev p 0.4491, dev r 0.1644, dev f1 0.2407
+iter step 500, train loss 0.6372, dev loss 0.6095, dev p 0.3775, dev r 0.1927, dev f1 0.2552
+iter step 550, train loss 0.6249, dev loss 0.5880, dev p 0.3845, dev r 0.2235, dev f1 0.2827
+>> new best
+iter step 600, train loss 0.6055, dev loss 0.6193, dev p 0.3305, dev r 0.3041, dev f1 0.3168
+>> new best
+iter step 650, train loss 0.5958, dev loss 0.6545, dev p 0.3624, dev r 0.3076, dev f1 0.3328
+>> new best
+iter step 700, train loss 0.6014, dev loss 0.5778, dev p 0.3956, dev r 0.3020, dev f1 0.3425
+>> new best
+iter step 750, train loss 0.6010, dev loss 0.5631, dev p 0.4173, dev r 0.2797, dev f1 0.3349
+iter step 800, train loss 0.6010, dev loss 0.5669, dev p 0.4946, dev r 0.2306, dev f1 0.3145
+iter step 850, train loss 0.5903, dev loss 0.5545, dev p 0.4777, dev r 0.3210, dev f1 0.3839
+>> new best
+iter step 900, train loss 0.5815, dev loss 0.5966, dev p 0.4226, dev r 0.3418, dev f1 0.3779
+iter step 950, train loss 0.5814, dev loss 0.5959, dev p 0.4297, dev r 0.3616, dev f1 0.3927
+>> new best
+iter step 1000, train loss 0.5718, dev loss 0.5526, dev p 0.5440, dev r 0.2803, dev f1 0.3700
+iter step 1050, train loss 0.5895, dev loss 0.5534, dev p 0.4984, dev r 0.3187, dev f1 0.3888
+iter step 1100, train loss 0.5799, dev loss 0.5879, dev p 0.5075, dev r 0.3286, dev f1 0.3989
+>> new best
+iter step 1150, train loss 0.5501, dev loss 0.5497, dev p 0.4418, dev r 0.4008, dev f1 0.4203
+>> new best
+iter step 1200, train loss 0.5326, dev loss 0.5384, dev p 0.4535, dev r 0.3736, dev f1 0.4097
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>epoch 2>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+iter step 1250, train loss 0.5205, dev loss 0.5618, dev p 0.4546, dev r 0.3913, dev f1 0.4205
+>> new best
+iter step 1300, train loss 0.5066, dev loss 0.5772, dev p 0.4357, dev r 0.4267, dev f1 0.4311
+>> new best
+iter step 1350, train loss 0.4911, dev loss 0.5292, dev p 0.5228, dev r 0.3611, dev f1 0.4271
+iter step 1400, train loss 0.5031, dev loss 0.5595, dev p 0.5131, dev r 0.3534, dev f1 0.4185
+iter step 1450, train loss 0.4920, dev loss 0.6027, dev p 0.4096, dev r 0.3658, dev f1 0.3864
+iter step 1500, train loss 0.4884, dev loss 0.5368, dev p 0.5469, dev r 0.3345, dev f1 0.4151
+iter step 1550, train loss 0.4975, dev loss 0.5721, dev p 0.4854, dev r 0.3993, dev f1 0.4382
+>> new best
+iter step 1600, train loss 0.4934, dev loss 0.5458, dev p 0.5032, dev r 0.3440, dev f1 0.4086
+iter step 1650, train loss 0.4987, dev loss 0.5538, dev p 0.4746, dev r 0.3952, dev f1 0.4313
+iter step 1700, train loss 0.4941, dev loss 0.5601, dev p 0.4312, dev r 0.3909, dev f1 0.4101
+iter step 1750, train loss 0.4899, dev loss 0.5518, dev p 0.5036, dev r 0.3718, dev f1 0.4277
+iter step 1800, train loss 0.4887, dev loss 0.5445, dev p 0.4732, dev r 0.3757, dev f1 0.4188
+iter step 1850, train loss 0.5041, dev loss 0.5495, dev p 0.5891, dev r 0.2795, dev f1 0.3791
+iter step 1900, train loss 0.5134, dev loss 0.5536, dev p 0.4864, dev r 0.3330, dev f1 0.3953
+iter step 1950, train loss 0.5031, dev loss 0.6661, dev p 0.4196, dev r 0.3701, dev f1 0.3933
+iter step 2000, train loss 0.4978, dev loss 0.5444, dev p 0.5291, dev r 0.3682, dev f1 0.4342
+iter step 2050, train loss 0.4906, dev loss 0.5394, dev p 0.4836, dev r 0.3952, dev f1 0.4349
+iter step 2100, train loss 0.5009, dev loss 0.5364, dev p 0.5575, dev r 0.3324, dev f1 0.4165
+iter step 2150, train loss 0.5112, dev loss 0.5681, dev p 0.4871, dev r 0.4132, dev f1 0.4471
+>> new best
+iter step 2200, train loss 0.5069, dev loss 0.5402, dev p 0.4807, dev r 0.3853, dev f1 0.4277
+iter step 2250, train loss 0.5077, dev loss 0.5349, dev p 0.4813, dev r 0.3819, dev f1 0.4259
+iter step 2300, train loss 0.5132, dev loss 0.5418, dev p 0.4944, dev r 0.3999, dev f1 0.4422
+iter step 2350, train loss 0.5379, dev loss 0.5474, dev p 0.4711, dev r 0.3420, dev f1 0.3963
+iter step 2400, train loss 0.5359, dev loss 0.5454, dev p 0.4530, dev r 0.4139, dev f1 0.4326
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>epoch 3>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+iter step 2450, train loss 0.5013, dev loss 0.5773, dev p 0.5503, dev r 0.3648, dev f1 0.4388
+iter step 2500, train loss 0.4311, dev loss 0.5807, dev p 0.5222, dev r 0.3202, dev f1 0.3970
+iter step 2550, train loss 0.3940, dev loss 0.5849, dev p 0.4957, dev r 0.3860, dev f1 0.4340
+iter step 2600, train loss 0.4061, dev loss 0.5772, dev p 0.4824, dev r 0.4181, dev f1 0.4479
+>> new best
+iter step 2650, train loss 0.4029, dev loss 0.6198, dev p 0.4555, dev r 0.3954, dev f1 0.4233
+iter step 2700, train loss 0.4228, dev loss 0.5938, dev p 0.4929, dev r 0.3465, dev f1 0.4069
+iter step 2750, train loss 0.4217, dev loss 0.5920, dev p 0.5438, dev r 0.3028, dev f1 0.3890
+iter step 2800, train loss 0.4126, dev loss 0.5883, dev p 0.4892, dev r 0.3768, dev f1 0.4257
+iter step 2850, train loss 0.4226, dev loss 0.5852, dev p 0.5293, dev r 0.3350, dev f1 0.4103
+iter step 2900, train loss 0.4141, dev loss 0.6205, dev p 0.4390, dev r 0.4381, dev f1 0.4385
+iter step 2950, train loss 0.4082, dev loss 0.5923, dev p 0.4566, dev r 0.3892, dev f1 0.4202
+iter step 3000, train loss 0.4091, dev loss 0.5747, dev p 0.5012, dev r 0.3806, dev f1 0.4326
+iter step 3050, train loss 0.4008, dev loss 0.6086, dev p 0.4881, dev r 0.3860, dev f1 0.4311
+iter step 3100, train loss 0.4114, dev loss 0.5736, dev p 0.5457, dev r 0.3378, dev f1 0.4173
+iter step 3150, train loss 0.4309, dev loss 0.5712, dev p 0.4984, dev r 0.4034, dev f1 0.4459
+iter step 3200, train loss 0.4335, dev loss 0.5483, dev p 0.5133, dev r 0.3785, dev f1 0.4357
+iter step 3250, train loss 0.4304, dev loss 0.5509, dev p 0.5221, dev r 0.3763, dev f1 0.4373
+iter step 3300, train loss 0.4227, dev loss 0.5757, dev p 0.5352, dev r 0.3418, dev f1 0.4172
+iter step 3350, train loss 0.4234, dev loss 0.5640, dev p 0.5319, dev r 0.3309, dev f1 0.4080
+iter step 3400, train loss 0.4255, dev loss 0.5585, dev p 0.5035, dev r 0.3795, dev f1 0.4328
+iter step 3450, train loss 0.4264, dev loss 0.5467, dev p 0.4983, dev r 0.4123, dev f1 0.4512
+>> new best
+iter step 3500, train loss 0.4250, dev loss 0.5640, dev p 0.4733, dev r 0.3915, dev f1 0.4285
+iter step 3550, train loss 0.4183, dev loss 0.5655, dev p 0.4450, dev r 0.4359, dev f1 0.4404
+iter step 3600, train loss 0.4249, dev loss 0.5696, dev p 0.4435, dev r 0.3931, dev f1 0.4168
+iter step 3650, train loss 0.4332, dev loss 0.5463, dev p 0.5445, dev r 0.3616, dev f1 0.4346
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>epoch 4>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+iter step 3700, train loss 0.3776, dev loss 0.6506, dev p 0.4742, dev r 0.3759, dev f1 0.4194
+iter step 3750, train loss 0.3032, dev loss 0.6740, dev p 0.5047, dev r 0.3828, dev f1 0.4354
+iter step 3800, train loss 0.2888, dev loss 0.6241, dev p 0.4596, dev r 0.4323, dev f1 0.4456
+iter step 3850, train loss 0.2902, dev loss 0.6129, dev p 0.4931, dev r 0.3993, dev f1 0.4413
+iter step 3900, train loss 0.2967, dev loss 0.7117, dev p 0.4232, dev r 0.4479, dev f1 0.4352
+iter step 3950, train loss 0.3067, dev loss 0.6447, dev p 0.4792, dev r 0.4183, dev f1 0.4466
+iter step 4000, train loss 0.3113, dev loss 0.5910, dev p 0.5050, dev r 0.3847, dev f1 0.4367
+iter step 4050, train loss 0.3173, dev loss 0.6231, dev p 0.5171, dev r 0.3736, dev f1 0.4338
+iter step 4100, train loss 0.3284, dev loss 0.6086, dev p 0.4906, dev r 0.3538, dev f1 0.4111
+iter step 4150, train loss 0.3288, dev loss 0.6096, dev p 0.5374, dev r 0.3585, dev f1 0.4300
+iter step 4200, train loss 0.3191, dev loss 0.6500, dev p 0.4843, dev r 0.3939, dev f1 0.4344
+iter step 4250, train loss 0.3226, dev loss 0.6956, dev p 0.4688, dev r 0.3898, dev f1 0.4256
+iter step 4300, train loss 0.3270, dev loss 0.6329, dev p 0.4975, dev r 0.4139, dev f1 0.4519
+>> new best
+iter step 4350, train loss 0.3215, dev loss 0.6020, dev p 0.4591, dev r 0.4404, dev f1 0.4495
+iter step 4400, train loss 0.3217, dev loss 0.6185, dev p 0.5005, dev r 0.4051, dev f1 0.4478
+iter step 4450, train loss 0.3239, dev loss 0.6018, dev p 0.5378, dev r 0.3986, dev f1 0.4578
+>> new best
+iter step 4500, train loss 0.3209, dev loss 0.6976, dev p 0.3796, dev r 0.3453, dev f1 0.3617
+iter step 4550, train loss 0.3273, dev loss 0.6743, dev p 0.4910, dev r 0.3918, dev f1 0.4358
+iter step 4600, train loss 0.3394, dev loss 0.6623, dev p 0.4732, dev r 0.4057, dev f1 0.4369
+iter step 4650, train loss 0.3398, dev loss 0.6371, dev p 0.4943, dev r 0.4063, dev f1 0.4460
+iter step 4700, train loss 0.3392, dev loss 0.6425, dev p 0.5204, dev r 0.3963, dev f1 0.4500
+iter step 4750, train loss 0.3391, dev loss 0.6063, dev p 0.4957, dev r 0.4008, dev f1 0.4432
+iter step 4800, train loss 0.3221, dev loss 0.6097, dev p 0.5219, dev r 0.4149, dev f1 0.4623
+>> new best
+iter step 4850, train loss 0.3161, dev loss 0.6229, dev p 0.5333, dev r 0.3948, dev f1 0.4537
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>epoch 5>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+iter step 4900, train loss 0.3069, dev loss 0.6821, dev p 0.4853, dev r 0.4226, dev f1 0.4517
+iter step 4950, train loss 0.2536, dev loss 0.7387, dev p 0.4991, dev r 0.3993, dev f1 0.4437
+iter step 5000, train loss 0.2244, dev loss 0.7016, dev p 0.5206, dev r 0.4091, dev f1 0.4582
+iter step 5050, train loss 0.2222, dev loss 0.7008, dev p 0.5043, dev r 0.3933, dev f1 0.4420
+iter step 5100, train loss 0.2169, dev loss 0.6723, dev p 0.5047, dev r 0.3808, dev f1 0.4341
+iter step 5150, train loss 0.2236, dev loss 0.6768, dev p 0.4696, dev r 0.4303, dev f1 0.4491
+iter step 5200, train loss 0.2299, dev loss 0.7628, dev p 0.5019, dev r 0.3980, dev f1 0.4440
+iter step 5250, train loss 0.2396, dev loss 0.6496, dev p 0.4854, dev r 0.4250, dev f1 0.4532
+iter step 5300, train loss 0.2435, dev loss 0.6334, dev p 0.4990, dev r 0.4153, dev f1 0.4533
+iter step 5350, train loss 0.2445, dev loss 0.6913, dev p 0.4709, dev r 0.4171, dev f1 0.4424
+iter step 5400, train loss 0.2470, dev loss 0.6172, dev p 0.4780, dev r 0.4218, dev f1 0.4482
+iter step 5450, train loss 0.2432, dev loss 0.7263, dev p 0.4886, dev r 0.4286, dev f1 0.4566
+iter step 5500, train loss 0.2450, dev loss 0.6683, dev p 0.4760, dev r 0.4087, dev f1 0.4398
+iter step 5550, train loss 0.2668, dev loss 0.6657, dev p 0.5353, dev r 0.4070, dev f1 0.4624
+>> new best
+iter step 5600, train loss 0.2664, dev loss 0.6808, dev p 0.4654, dev r 0.4299, dev f1 0.4469
+iter step 5650, train loss 0.2473, dev loss 0.7159, dev p 0.4656, dev r 0.4535, dev f1 0.4595
+iter step 5700, train loss 0.2507, dev loss 0.7419, dev p 0.4867, dev r 0.4061, dev f1 0.4428
+iter step 5750, train loss 0.2609, dev loss 0.7545, dev p 0.4972, dev r 0.4151, dev f1 0.4524
+iter step 5800, train loss 0.2586, dev loss 0.6504, dev p 0.5245, dev r 0.3952, dev f1 0.4508
+iter step 5850, train loss 0.2503, dev loss 0.6318, dev p 0.4856, dev r 0.4012, dev f1 0.4394
+iter step 5900, train loss 0.2543, dev loss 0.6869, dev p 0.4791, dev r 0.4349, dev f1 0.4560
+iter step 5950, train loss 0.2681, dev loss 0.6275, dev p 0.4747, dev r 0.4286, dev f1 0.4504
+iter step 6000, train loss 0.2654, dev loss 0.7205, dev p 0.4745, dev r 0.4267, dev f1 0.4493
+iter step 6050, train loss 0.2579, dev loss 0.6795, dev p 0.4781, dev r 0.4093, dev f1 0.4410
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>epoch 6>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+iter step 6100, train loss 0.2571, dev loss 0.7146, dev p 0.5205, dev r 0.4048, dev f1 0.4554
+iter step 6150, train loss 0.2095, dev loss 0.7762, dev p 0.5013, dev r 0.4046, dev f1 0.4478
+iter step 6200, train loss 0.1840, dev loss 0.7636, dev p 0.4932, dev r 0.4145, dev f1 0.4504
+iter step 6250, train loss 0.1870, dev loss 0.7856, dev p 0.4803, dev r 0.4516, dev f1 0.4655
+>> new best
+iter step 6300, train loss 0.1715, dev loss 0.7325, dev p 0.5098, dev r 0.4036, dev f1 0.4506
+iter step 6350, train loss 0.1730, dev loss 0.7644, dev p 0.4742, dev r 0.4430, dev f1 0.4581
+iter step 6400, train loss 0.1926, dev loss 0.7010, dev p 0.4896, dev r 0.4199, dev f1 0.4521
+iter step 6450, train loss 0.1976, dev loss 0.8095, dev p 0.4150, dev r 0.4559, dev f1 0.4345
+iter step 6500, train loss 0.1916, dev loss 0.7634, dev p 0.4791, dev r 0.4181, dev f1 0.4465
+iter step 6550, train loss 0.2017, dev loss 0.7655, dev p 0.4809, dev r 0.4402, dev f1 0.4596
+iter step 6600, train loss 0.2031, dev loss 0.7454, dev p 0.4914, dev r 0.4263, dev f1 0.4565
+iter step 6650, train loss 0.1888, dev loss 0.7952, dev p 0.4879, dev r 0.4278, dev f1 0.4559
+iter step 6700, train loss 0.1919, dev loss 0.7458, dev p 0.4243, dev r 0.4507, dev f1 0.4371
+iter step 6750, train loss 0.2003, dev loss 0.7851, dev p 0.4871, dev r 0.4469, dev f1 0.4662
+>> new best
+iter step 6800, train loss 0.2077, dev loss 0.7225, dev p 0.5177, dev r 0.4049, dev f1 0.4544
+iter step 6850, train loss 0.2250, dev loss 0.7241, dev p 0.5088, dev r 0.4346, dev f1 0.4688
+>> new best
+iter step 6900, train loss 0.2090, dev loss 0.7203, dev p 0.5216, dev r 0.4079, dev f1 0.4578
+iter step 6950, train loss 0.1945, dev loss 0.7408, dev p 0.4671, dev r 0.4229, dev f1 0.4439
+iter step 7000, train loss 0.2073, dev loss 0.7973, dev p 0.4440, dev r 0.4436, dev f1 0.4438
+iter step 7050, train loss 0.2060, dev loss 0.7115, dev p 0.5197, dev r 0.3901, dev f1 0.4457
+iter step 7100, train loss 0.2076, dev loss 0.7377, dev p 0.4755, dev r 0.4552, dev f1 0.4651
+iter step 7150, train loss 0.2235, dev loss 0.6484, dev p 0.5253, dev r 0.3952, dev f1 0.4510
+iter step 7200, train loss 0.2202, dev loss 0.7438, dev p 0.4486, dev r 0.4769, dev f1 0.4623
+iter step 7250, train loss 0.2095, dev loss 0.8030, dev p 0.5141, dev r 0.4196, dev f1 0.4621
+iter step 7300, train loss 0.2111, dev loss 0.7081, dev p 0.4638, dev r 0.4509, dev f1 0.4573
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>epoch 7>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+iter step 7350, train loss 0.1880, dev loss 0.8167, dev p 0.5215, dev r 0.4018, dev f1 0.4539
+iter step 7400, train loss 0.1582, dev loss 0.8651, dev p 0.4840, dev r 0.4447, dev f1 0.4635
+iter step 7450, train loss 0.1510, dev loss 0.8026, dev p 0.4720, dev r 0.4543, dev f1 0.4629
+iter step 7500, train loss 0.1483, dev loss 0.8043, dev p 0.4954, dev r 0.4370, dev f1 0.4644
+iter step 7550, train loss 0.1464, dev loss 0.7733, dev p 0.4836, dev r 0.4370, dev f1 0.4591
+iter step 7600, train loss 0.1458, dev loss 0.7833, dev p 0.4712, dev r 0.4248, dev f1 0.4468
+iter step 7650, train loss 0.1487, dev loss 0.8106, dev p 0.4782, dev r 0.4608, dev f1 0.4693
+>> new best
+iter step 7700, train loss 0.1530, dev loss 0.7629, dev p 0.4866, dev r 0.4327, dev f1 0.4581
+iter step 7750, train loss 0.1463, dev loss 0.8647, dev p 0.4788, dev r 0.4081, dev f1 0.4406
+iter step 7800, train loss 0.1556, dev loss 0.8497, dev p 0.4895, dev r 0.4048, dev f1 0.4431
+iter step 7850, train loss 0.1711, dev loss 0.8778, dev p 0.4462, dev r 0.4681, dev f1 0.4569
+iter step 7900, train loss 0.1667, dev loss 0.8028, dev p 0.4826, dev r 0.4507, dev f1 0.4661
+iter step 7950, train loss 0.1625, dev loss 0.8068, dev p 0.5309, dev r 0.3958, dev f1 0.4535
+iter step 8000, train loss 0.1681, dev loss 0.8461, dev p 0.4809, dev r 0.4396, dev f1 0.4593
+iter step 8050, train loss 0.1669, dev loss 0.8120, dev p 0.4828, dev r 0.4559, dev f1 0.4690
+iter step 8100, train loss 0.1678, dev loss 0.7923, dev p 0.4712, dev r 0.4269, dev f1 0.4480
+iter step 8150, train loss 0.1807, dev loss 0.8033, dev p 0.4665, dev r 0.3954, dev f1 0.4280
+iter step 8200, train loss 0.2002, dev loss 0.8262, dev p 0.4809, dev r 0.4233, dev f1 0.4503
+iter step 8250, train loss 0.1947, dev loss 0.8071, dev p 0.4832, dev r 0.4297, dev f1 0.4549
+iter step 8300, train loss 0.1778, dev loss 0.8521, dev p 0.4478, dev r 0.4194, dev f1 0.4331
+iter step 8350, train loss 0.1847, dev loss 0.7760, dev p 0.4931, dev r 0.4229, dev f1 0.4553
+iter step 8400, train loss 0.1818, dev loss 0.9250, dev p 0.4506, dev r 0.4363, dev f1 0.4433
+iter step 8450, train loss 0.1867, dev loss 0.7715, dev p 0.4679, dev r 0.4121, dev f1 0.4382
+iter step 8500, train loss 0.1859, dev loss 0.7517, dev p 0.4652, dev r 0.4306, dev f1 0.4472
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>epoch 8>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+iter step 8550, train loss 0.1703, dev loss 0.8777, dev p 0.4850, dev r 0.4031, dev f1 0.4403
+iter step 8600, train loss 0.1514, dev loss 0.8426, dev p 0.4686, dev r 0.4355, dev f1 0.4515
+iter step 8650, train loss 0.1285, dev loss 0.8894, dev p 0.5291, dev r 0.3885, dev f1 0.4480
+iter step 8700, train loss 0.1283, dev loss 0.8503, dev p 0.4666, dev r 0.4357, dev f1 0.4506
+iter step 8750, train loss 0.1264, dev loss 0.8438, dev p 0.4980, dev r 0.4040, dev f1 0.4461
+iter step 8800, train loss 0.1327, dev loss 0.8580, dev p 0.4621, dev r 0.3990, dev f1 0.4282
+iter step 8850, train loss 0.1562, dev loss 0.7927, dev p 0.4710, dev r 0.4072, dev f1 0.4368
+iter step 8900, train loss 0.1524, dev loss 0.8299, dev p 0.4894, dev r 0.4121, dev f1 0.4474
+iter step 8950, train loss 0.1384, dev loss 0.8347, dev p 0.4615, dev r 0.4353, dev f1 0.4480
+iter step 9000, train loss 0.1378, dev loss 0.8789, dev p 0.5013, dev r 0.4063, dev f1 0.4488
+iter step 9050, train loss 0.1395, dev loss 0.9223, dev p 0.4739, dev r 0.4265, dev f1 0.4489
+iter step 9100, train loss 0.1366, dev loss 0.8596, dev p 0.4824, dev r 0.4119, dev f1 0.4444
+iter step 9150, train loss 0.1293, dev loss 0.9322, dev p 0.4897, dev r 0.4199, dev f1 0.4522
+iter step 9200, train loss 0.1319, dev loss 0.8181, dev p 0.4859, dev r 0.4312, dev f1 0.4569
+iter step 9250, train loss 0.1336, dev loss 0.7830, dev p 0.4921, dev r 0.4154, dev f1 0.4505
+iter step 9300, train loss 0.1319, dev loss 0.7893, dev p 0.4797, dev r 0.4233, dev f1 0.4498
+iter step 9350, train loss 0.1354, dev loss 0.8127, dev p 0.4944, dev r 0.4224, dev f1 0.4556
+iter step 9400, train loss 0.1353, dev loss 0.8067, dev p 0.5207, dev r 0.4064, dev f1 0.4565
+iter step 9450, train loss 0.1379, dev loss 0.8332, dev p 0.5075, dev r 0.4143, dev f1 0.4562
+iter step 9500, train loss 0.1378, dev loss 0.8990, dev p 0.4739, dev r 0.4113, dev f1 0.4404
+iter step 9550, train loss 0.1357, dev loss 0.8536, dev p 0.4977, dev r 0.4409, dev f1 0.4676
+iter step 9600, train loss 0.1427, dev loss 0.9330, dev p 0.4962, dev r 0.3873, dev f1 0.4350
+iter step 9650, train loss 0.1657, dev loss 0.8329, dev p 0.4568, dev r 0.4698, dev f1 0.4632
+iter step 9700, train loss 0.1732, dev loss 0.8356, dev p 0.4761, dev r 0.4713, dev f1 0.4737
+>> new best
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>epoch 9>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+iter step 9750, train loss 0.1662, dev loss 0.8121, dev p 0.4773, dev r 0.4721, dev f1 0.4747
+>> new best
+iter step 9800, train loss 0.1350, dev loss 0.9173, dev p 0.4770, dev r 0.4766, dev f1 0.4768
+>> new best
+iter step 9850, train loss 0.1032, dev loss 0.8998, dev p 0.4751, dev r 0.4829, dev f1 0.4790
+>> new best
+iter step 9900, train loss 0.1108, dev loss 0.8636, dev p 0.4858, dev r 0.4608, dev f1 0.4730
+iter step 9950, train loss 0.1137, dev loss 0.8532, dev p 0.4601, dev r 0.4762, dev f1 0.4680
+iter step 10000, train loss 0.1165, dev loss 0.8561, dev p 0.4690, dev r 0.4711, dev f1 0.4701
+iter step 10050, train loss 0.1066, dev loss 0.9743, dev p 0.4821, dev r 0.4734, dev f1 0.4777
+iter step 10100, train loss 0.0939, dev loss 0.8602, dev p 0.4948, dev r 0.4509, dev f1 0.4718
+iter step 10150, train loss 0.0952, dev loss 0.9057, dev p 0.4725, dev r 0.4681, dev f1 0.4703
+iter step 10200, train loss 0.0976, dev loss 0.9106, dev p 0.4731, dev r 0.4841, dev f1 0.4785
+iter step 10250, train loss 0.0994, dev loss 0.9802, dev p 0.4754, dev r 0.4781, dev f1 0.4767
+iter step 10300, train loss 0.0934, dev loss 0.9666, dev p 0.4920, dev r 0.4760, dev f1 0.4838
+>> new best
+iter step 10350, train loss 0.0958, dev loss 1.0279, dev p 0.4812, dev r 0.4676, dev f1 0.4743
+iter step 10400, train loss 0.0965, dev loss 1.0029, dev p 0.4704, dev r 0.4751, dev f1 0.4727
+iter step 10450, train loss 0.0953, dev loss 0.9499, dev p 0.5107, dev r 0.4456, dev f1 0.4760
+iter step 10500, train loss 0.0989, dev loss 0.8590, dev p 0.4830, dev r 0.4843, dev f1 0.4836
+iter step 10550, train loss 0.0966, dev loss 0.9616, dev p 0.4937, dev r 0.4803, dev f1 0.4869
+>> new best
+iter step 10600, train loss 0.0989, dev loss 0.8599, dev p 0.5095, dev r 0.4419, dev f1 0.4733
+iter step 10650, train loss 0.1032, dev loss 1.0248, dev p 0.4696, dev r 0.4848, dev f1 0.4771
+iter step 10700, train loss 0.1020, dev loss 0.9150, dev p 0.5031, dev r 0.4646, dev f1 0.4831
+iter step 10750, train loss 0.1010, dev loss 0.9458, dev p 0.4989, dev r 0.4496, dev f1 0.4729
+iter step 10800, train loss 0.1015, dev loss 0.9891, dev p 0.4801, dev r 0.4798, dev f1 0.4799
+iter step 10850, train loss 0.1075, dev loss 1.0192, dev p 0.4815, dev r 0.4813, dev f1 0.4814
+iter step 10900, train loss 0.1096, dev loss 0.9675, dev p 0.5023, dev r 0.4447, dev f1 0.4718
+iter step 10950, train loss 0.1127, dev loss 0.8591, dev p 0.5221, dev r 0.4475, dev f1 0.4819
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>epoch 10>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+iter step 11000, train loss 0.1049, dev loss 1.0182, dev p 0.4876, dev r 0.4756, dev f1 0.4815
+iter step 11050, train loss 0.0850, dev loss 0.9830, dev p 0.4725, dev r 0.4873, dev f1 0.4797
+iter step 11100, train loss 0.0865, dev loss 0.9596, dev p 0.4985, dev r 0.4614, dev f1 0.4792
+iter step 11150, train loss 0.0888, dev loss 0.9533, dev p 0.4801, dev r 0.4668, dev f1 0.4734
+iter step 11200, train loss 0.0758, dev loss 1.0551, dev p 0.4429, dev r 0.4985, dev f1 0.4691
+iter step 11250, train loss 0.0734, dev loss 1.0736, dev p 0.4602, dev r 0.4843, dev f1 0.4719
+iter step 11300, train loss 0.0816, dev loss 0.9207, dev p 0.4587, dev r 0.4867, dev f1 0.4723
+iter step 11350, train loss 0.0790, dev loss 0.9859, dev p 0.4836, dev r 0.4659, dev f1 0.4745
+iter step 11400, train loss 0.0756, dev loss 0.9570, dev p 0.4871, dev r 0.4691, dev f1 0.4779
+iter step 11450, train loss 0.0821, dev loss 0.9582, dev p 0.5041, dev r 0.4736, dev f1 0.4883
+>> new best
+iter step 11500, train loss 0.0809, dev loss 0.9903, dev p 0.4735, dev r 0.4869, dev f1 0.4801
+iter step 11550, train loss 0.0831, dev loss 0.9395, dev p 0.4891, dev r 0.4653, dev f1 0.4769
+iter step 11600, train loss 0.0871, dev loss 1.0235, dev p 0.4965, dev r 0.4689, dev f1 0.4823
+iter step 11650, train loss 0.0749, dev loss 1.0504, dev p 0.4954, dev r 0.4824, dev f1 0.4888
+>> new best
+iter step 11700, train loss 0.0694, dev loss 1.1199, dev p 0.4871, dev r 0.4792, dev f1 0.4831
+iter step 11750, train loss 0.0742, dev loss 1.0010, dev p 0.4755, dev r 0.4603, dev f1 0.4677
+iter step 11800, train loss 0.0778, dev loss 0.9913, dev p 0.4567, dev r 0.4790, dev f1 0.4676
+iter step 11850, train loss 0.0796, dev loss 0.9587, dev p 0.4808, dev r 0.4805, dev f1 0.4806
+iter step 11900, train loss 0.0793, dev loss 0.9597, dev p 0.4893, dev r 0.4841, dev f1 0.4867
+iter step 11950, train loss 0.0875, dev loss 0.8860, dev p 0.4741, dev r 0.4796, dev f1 0.4768
+iter step 12000, train loss 0.0908, dev loss 0.9250, dev p 0.4855, dev r 0.4730, dev f1 0.4792
+iter step 12050, train loss 0.0821, dev loss 1.0332, dev p 0.4895, dev r 0.4724, dev f1 0.4808
+iter step 12100, train loss 0.0729, dev loss 0.9645, dev p 0.4894, dev r 0.4850, dev f1 0.4872
+iter step 12150, train loss 0.0730, dev loss 0.9665, dev p 0.4848, dev r 0.4717, dev f1 0.4781
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>epoch 11>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+iter step 12200, train loss 0.0763, dev loss 1.0858, dev p 0.4916, dev r 0.4717, dev f1 0.4814
+iter step 12250, train loss 0.0649, dev loss 1.0867, dev p 0.4700, dev r 0.4901, dev f1 0.4798
+iter step 12300, train loss 0.0588, dev loss 1.0828, dev p 0.4923, dev r 0.4711, dev f1 0.4815
+iter step 12350, train loss 0.0567, dev loss 1.1274, dev p 0.4743, dev r 0.4773, dev f1 0.4758
+iter step 12400, train loss 0.0586, dev loss 1.0820, dev p 0.4951, dev r 0.4687, dev f1 0.4816
+iter step 12450, train loss 0.0639, dev loss 1.0208, dev p 0.4743, dev r 0.4974, dev f1 0.4856
+iter step 12500, train loss 0.0628, dev loss 1.0691, dev p 0.4741, dev r 0.4844, dev f1 0.4792
+iter step 12550, train loss 0.0648, dev loss 0.9360, dev p 0.4735, dev r 0.4674, dev f1 0.4704
+iter step 12600, train loss 0.0678, dev loss 1.1700, dev p 0.4786, dev r 0.4751, dev f1 0.4768
+iter step 12650, train loss 0.0689, dev loss 1.1082, dev p 0.4669, dev r 0.4837, dev f1 0.4751
+iter step 12700, train loss 0.0673, dev loss 1.0363, dev p 0.4721, dev r 0.4910, dev f1 0.4814
+iter step 12750, train loss 0.0618, dev loss 1.1097, dev p 0.4630, dev r 0.5009, dev f1 0.4812
+iter step 12800, train loss 0.0564, dev loss 1.0885, dev p 0.4696, dev r 0.4916, dev f1 0.4803
+iter step 12850, train loss 0.0620, dev loss 0.9903, dev p 0.4640, dev r 0.4876, dev f1 0.4755
+iter step 12900, train loss 0.0667, dev loss 1.0572, dev p 0.4731, dev r 0.4856, dev f1 0.4792
+iter step 12950, train loss 0.0618, dev loss 1.0829, dev p 0.4851, dev r 0.4867, dev f1 0.4859
+iter step 13000, train loss 0.0627, dev loss 1.0718, dev p 0.4750, dev r 0.4871, dev f1 0.4809
+iter step 13050, train loss 0.0672, dev loss 1.0099, dev p 0.4953, dev r 0.4788, dev f1 0.4869
+iter step 13100, train loss 0.0650, dev loss 1.0400, dev p 0.4971, dev r 0.4741, dev f1 0.4853
+iter step 13150, train loss 0.0663, dev loss 1.0362, dev p 0.4851, dev r 0.4863, dev f1 0.4857
+iter step 13200, train loss 0.0689, dev loss 0.9679, dev p 0.4789, dev r 0.4899, dev f1 0.4843
+iter step 13250, train loss 0.0652, dev loss 0.9961, dev p 0.4946, dev r 0.4861, dev f1 0.4903
+>> new best
+iter step 13300, train loss 0.0737, dev loss 1.0023, dev p 0.4952, dev r 0.4799, dev f1 0.4874
+iter step 13350, train loss 0.0800, dev loss 1.0552, dev p 0.5205, dev r 0.4301, dev f1 0.4710
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>epoch 12>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+iter step 13400, train loss 0.0704, dev loss 1.0743, dev p 0.5027, dev r 0.4361, dev f1 0.4670
+iter step 13450, train loss 0.0618, dev loss 1.0936, dev p 0.4892, dev r 0.4364, dev f1 0.4613
+iter step 13500, train loss 0.0593, dev loss 1.0932, dev p 0.4888, dev r 0.4522, dev f1 0.4698
+iter step 13550, train loss 0.0671, dev loss 1.0376, dev p 0.4817, dev r 0.4423, dev f1 0.4611
+iter step 13600, train loss 0.0660, dev loss 1.1736, dev p 0.4659, dev r 0.4413, dev f1 0.4533
+iter step 13650, train loss 0.0578, dev loss 1.1953, dev p 0.4791, dev r 0.4333, dev f1 0.4550
+iter step 13700, train loss 0.0598, dev loss 1.0922, dev p 0.4632, dev r 0.4256, dev f1 0.4436
+iter step 13750, train loss 0.0605, dev loss 1.0714, dev p 0.4964, dev r 0.4237, dev f1 0.4572
+iter step 13800, train loss 0.0568, dev loss 1.1315, dev p 0.4625, dev r 0.4346, dev f1 0.4481
+iter step 13850, train loss 0.0632, dev loss 1.0733, dev p 0.4675, dev r 0.4316, dev f1 0.4488
+iter step 13900, train loss 0.0705, dev loss 1.0373, dev p 0.4600, dev r 0.4518, dev f1 0.4559
+iter step 13950, train loss 0.0693, dev loss 1.0746, dev p 0.4791, dev r 0.4372, dev f1 0.4572
+iter step 14000, train loss 0.0678, dev loss 1.0802, dev p 0.4895, dev r 0.4331, dev f1 0.4596
+iter step 14050, train loss 0.0687, dev loss 1.1041, dev p 0.4827, dev r 0.4443, dev f1 0.4627
+iter step 14100, train loss 0.0686, dev loss 1.0776, dev p 0.4666, dev r 0.4374, dev f1 0.4515
+iter step 14150, train loss 0.0609, dev loss 1.1216, dev p 0.4797, dev r 0.4269, dev f1 0.4517
+iter step 14200, train loss 0.0549, dev loss 1.1928, dev p 0.4843, dev r 0.4349, dev f1 0.4583
+iter step 14250, train loss 0.0582, dev loss 1.1257, dev p 0.4835, dev r 0.4334, dev f1 0.4571
+iter step 14300, train loss 0.0616, dev loss 1.1226, dev p 0.4873, dev r 0.4417, dev f1 0.4634
+iter step 14350, train loss 0.0581, dev loss 1.1293, dev p 0.4977, dev r 0.4169, dev f1 0.4537
+iter step 14400, train loss 0.0655, dev loss 1.0351, dev p 0.5131, dev r 0.4211, dev f1 0.4626
+iter step 14450, train loss 0.0705, dev loss 0.9815, dev p 0.4982, dev r 0.4334, dev f1 0.4636
+iter step 14500, train loss 0.0633, dev loss 1.0744, dev p 0.5084, dev r 0.4299, dev f1 0.4659
+iter step 14550, train loss 0.0661, dev loss 1.1112, dev p 0.4821, dev r 0.4303, dev f1 0.4547
+iter step 14600, train loss 0.0668, dev loss 1.0963, dev p 0.4993, dev r 0.4306, dev f1 0.4624
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>epoch 13>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+iter step 14650, train loss 0.0614, dev loss 1.1559, dev p 0.4750, dev r 0.4316, dev f1 0.4523
+iter step 14700, train loss 0.0551, dev loss 1.1994, dev p 0.4747, dev r 0.4434, dev f1 0.4585
+iter step 14750, train loss 0.0503, dev loss 1.1845, dev p 0.4810, dev r 0.4342, dev f1 0.4564
+iter step 14800, train loss 0.0480, dev loss 1.2300, dev p 0.4865, dev r 0.4453, dev f1 0.4650
+iter step 14850, train loss 0.0513, dev loss 1.1882, dev p 0.4857, dev r 0.4419, dev f1 0.4627
+iter step 14900, train loss 0.0552, dev loss 1.1672, dev p 0.4597, dev r 0.4469, dev f1 0.4532
+iter step 14950, train loss 0.0550, dev loss 1.1098, dev p 0.4841, dev r 0.4368, dev f1 0.4592
+iter step 15000, train loss 0.0540, dev loss 1.1521, dev p 0.4719, dev r 0.4454, dev f1 0.4583
+iter step 15050, train loss 0.0534, dev loss 1.1755, dev p 0.4996, dev r 0.4297, dev f1 0.4620
+iter step 15100, train loss 0.0532, dev loss 1.1856, dev p 0.4854, dev r 0.4389, dev f1 0.4610
+iter step 15150, train loss 0.0525, dev loss 1.0922, dev p 0.4736, dev r 0.4464, dev f1 0.4596
+iter step 15200, train loss 0.0552, dev loss 1.1556, dev p 0.4832, dev r 0.4368, dev f1 0.4588
+iter step 15250, train loss 0.0563, dev loss 1.0932, dev p 0.4872, dev r 0.4353, dev f1 0.4598
+iter step 15300, train loss 0.0546, dev loss 1.2046, dev p 0.4662, dev r 0.4434, dev f1 0.4545
+iter step 15350, train loss 0.0521, dev loss 1.1454, dev p 0.4851, dev r 0.4282, dev f1 0.4549
+iter step 15400, train loss 0.0494, dev loss 1.2591, dev p 0.4698, dev r 0.4299, dev f1 0.4489
+iter step 15450, train loss 0.0521, dev loss 1.1528, dev p 0.4572, dev r 0.4372, dev f1 0.4470
+iter step 15500, train loss 0.0547, dev loss 1.1794, dev p 0.4705, dev r 0.4229, dev f1 0.4454
+iter step 15550, train loss 0.0527, dev loss 1.1610, dev p 0.4831, dev r 0.4314, dev f1 0.4558
+iter step 15600, train loss 0.0565, dev loss 1.1070, dev p 0.4884, dev r 0.4256, dev f1 0.4548
+iter step 15650, train loss 0.0586, dev loss 1.1446, dev p 0.4748, dev r 0.4409, dev f1 0.4572
+iter step 15700, train loss 0.0549, dev loss 1.0670, dev p 0.4810, dev r 0.4426, dev f1 0.4610
+iter step 15750, train loss 0.0544, dev loss 1.0977, dev p 0.4891, dev r 0.4222, dev f1 0.4532
+iter step 15800, train loss 0.0534, dev loss 1.0920, dev p 0.4885, dev r 0.4391, dev f1 0.4625
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>epoch 14>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+iter step 15850, train loss 0.0509, dev loss 1.2007, dev p 0.4909, dev r 0.4213, dev f1 0.4534
+iter step 15900, train loss 0.0443, dev loss 1.2691, dev p 0.4800, dev r 0.4357, dev f1 0.4568
+iter step 15950, train loss 0.0402, dev loss 1.2108, dev p 0.4830, dev r 0.4286, dev f1 0.4542
+iter step 16000, train loss 0.0445, dev loss 1.2034, dev p 0.4647, dev r 0.4533, dev f1 0.4589
+iter step 16050, train loss 0.0417, dev loss 1.2905, dev p 0.4865, dev r 0.4430, dev f1 0.4637
+iter step 16100, train loss 0.0392, dev loss 1.1923, dev p 0.4877, dev r 0.4391, dev f1 0.4621
+iter step 16150, train loss 0.0407, dev loss 1.2867, dev p 0.4883, dev r 0.4409, dev f1 0.4634
+iter step 16200, train loss 0.0417, dev loss 1.2472, dev p 0.4799, dev r 0.4411, dev f1 0.4597
+iter step 16250, train loss 0.0408, dev loss 1.2240, dev p 0.5016, dev r 0.4357, dev f1 0.4663
+iter step 16300, train loss 0.0392, dev loss 1.3239, dev p 0.4870, dev r 0.4389, dev f1 0.4617
+iter step 16350, train loss 0.0436, dev loss 1.2256, dev p 0.4926, dev r 0.4368, dev f1 0.4630
+iter step 16400, train loss 0.0481, dev loss 1.1570, dev p 0.5061, dev r 0.4415, dev f1 0.4716
+iter step 16450, train loss 0.0506, dev loss 1.1000, dev p 0.4752, dev r 0.4342, dev f1 0.4538
+iter step 16500, train loss 0.0498, dev loss 1.1738, dev p 0.4864, dev r 0.4333, dev f1 0.4583
+iter step 16550, train loss 0.0451, dev loss 1.2911, dev p 0.4885, dev r 0.4361, dev f1 0.4608
+iter step 16600, train loss 0.0478, dev loss 1.1551, dev p 0.4577, dev r 0.4464, dev f1 0.4520
+iter step 16650, train loss 0.0537, dev loss 1.2255, dev p 0.4649, dev r 0.4389, dev f1 0.4515
+iter step 16700, train loss 0.0529, dev loss 1.1659, dev p 0.4738, dev r 0.4381, dev f1 0.4553
+iter step 16750, train loss 0.0480, dev loss 1.2957, dev p 0.4733, dev r 0.4468, dev f1 0.4596
+iter step 16800, train loss 0.0463, dev loss 1.2758, dev p 0.4784, dev r 0.4357, dev f1 0.4560
+iter step 16850, train loss 0.0492, dev loss 1.2449, dev p 0.4993, dev r 0.4288, dev f1 0.4614
+iter step 16900, train loss 0.0475, dev loss 1.2878, dev p 0.4747, dev r 0.4334, dev f1 0.4532
+iter step 16950, train loss 0.0458, dev loss 1.2295, dev p 0.4610, dev r 0.4306, dev f1 0.4453
+iter step 17000, train loss 0.0461, dev loss 1.3276, dev p 0.4876, dev r 0.4301, dev f1 0.4570
+iter step 17050, train loss 0.0432, dev loss 1.3632, dev p 0.4874, dev r 0.4336, dev f1 0.4589
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>epoch 15>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+iter step 17100, train loss 0.0421, dev loss 1.3213, dev p 0.4776, dev r 0.4351, dev f1 0.4554
+iter step 17150, train loss 0.0411, dev loss 1.3551, dev p 0.4823, dev r 0.4291, dev f1 0.4542
+iter step 17200, train loss 0.0384, dev loss 1.4136, dev p 0.4805, dev r 0.4415, dev f1 0.4602
+iter step 17250, train loss 0.0378, dev loss 1.4206, dev p 0.4724, dev r 0.4340, dev f1 0.4524
+iter step 17300, train loss 0.0416, dev loss 1.3222, dev p 0.5030, dev r 0.4177, dev f1 0.4564
+iter step 17350, train loss 0.0435, dev loss 1.3332, dev p 0.4679, dev r 0.4348, dev f1 0.4507
+iter step 17400, train loss 0.0462, dev loss 1.2559, dev p 0.3966, dev r 0.3757, dev f1 0.3859
+iter step 17450, train loss 0.0668, dev loss 1.2794, dev p 0.4300, dev r 0.4199, dev f1 0.4249
+iter step 17500, train loss 0.0715, dev loss 1.1998, dev p 0.4595, dev r 0.3995, dev f1 0.4274
+iter step 17550, train loss 0.0587, dev loss 1.2095, dev p 0.4574, dev r 0.4091, dev f1 0.4319
+iter step 17600, train loss 0.0550, dev loss 1.3108, dev p 0.4456, dev r 0.4081, dev f1 0.4261
+iter step 17650, train loss 0.0534, dev loss 1.3135, dev p 0.4442, dev r 0.4106, dev f1 0.4267
+iter step 17700, train loss 0.0522, dev loss 1.3209, dev p 0.4550, dev r 0.4059, dev f1 0.4290
+iter step 17750, train loss 0.0522, dev loss 1.1934, dev p 0.4643, dev r 0.4117, dev f1 0.4364
+iter step 17800, train loss 0.0513, dev loss 1.2602, dev p 0.4692, dev r 0.4111, dev f1 0.4382
+iter step 17850, train loss 0.0504, dev loss 1.2514, dev p 0.4651, dev r 0.4132, dev f1 0.4376
+iter step 17900, train loss 0.0514, dev loss 1.2391, dev p 0.4491, dev r 0.4243, dev f1 0.4363
+iter step 17950, train loss 0.0507, dev loss 1.2216, dev p 0.4539, dev r 0.4198, dev f1 0.4361
+iter step 18000, train loss 0.0495, dev loss 1.2557, dev p 0.4530, dev r 0.4160, dev f1 0.4337
+iter step 18050, train loss 0.0458, dev loss 1.3012, dev p 0.4570, dev r 0.4231, dev f1 0.4394
+iter step 18100, train loss 0.0416, dev loss 1.3952, dev p 0.4510, dev r 0.4239, dev f1 0.4370
+iter step 18150, train loss 0.0504, dev loss 1.1920, dev p 0.4601, dev r 0.4194, dev f1 0.4388
+iter step 18200, train loss 0.0504, dev loss 1.2733, dev p 0.4442, dev r 0.4220, dev f1 0.4328
+iter step 18250, train loss 0.0450, dev loss 1.2993, dev p 0.4553, dev r 0.4010, dev f1 0.4264
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>epoch 16>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+iter step 18300, train loss 0.0490, dev loss 1.3234, dev p 0.4580, dev r 0.4278, dev f1 0.4424
+iter step 18350, train loss 0.0424, dev loss 1.4123, dev p 0.4531, dev r 0.4235, dev f1 0.4378
+iter step 18400, train loss 0.0406, dev loss 1.3160, dev p 0.4588, dev r 0.4168, dev f1 0.4368
+iter step 18450, train loss 0.0390, dev loss 1.3804, dev p 0.4617, dev r 0.4192, dev f1 0.4394
+iter step 18500, train loss 0.0333, dev loss 1.4496, dev p 0.4611, dev r 0.4265, dev f1 0.4431
+iter step 18550, train loss 0.0380, dev loss 1.3367, dev p 0.4539, dev r 0.4237, dev f1 0.4383
+iter step 18600, train loss 0.0417, dev loss 1.3577, dev p 0.4563, dev r 0.4183, dev f1 0.4365
+iter step 18650, train loss 0.0434, dev loss 1.3551, dev p 0.4483, dev r 0.4177, dev f1 0.4324
+iter step 18700, train loss 0.0456, dev loss 1.3545, dev p 0.4494, dev r 0.4175, dev f1 0.4328
+iter step 18750, train loss 0.0449, dev loss 1.4059, dev p 0.4390, dev r 0.4267, dev f1 0.4327
+iter step 18800, train loss 0.0415, dev loss 1.3610, dev p 0.4564, dev r 0.4162, dev f1 0.4354
+iter step 18850, train loss 0.0381, dev loss 1.4085, dev p 0.4581, dev r 0.4132, dev f1 0.4345
+iter step 18900, train loss 0.0390, dev loss 1.4254, dev p 0.4560, dev r 0.4228, dev f1 0.4388
+iter step 18950, train loss 0.0377, dev loss 1.4071, dev p 0.4517, dev r 0.4239, dev f1 0.4373
+iter step 19000, train loss 0.0347, dev loss 1.4174, dev p 0.4661, dev r 0.4248, dev f1 0.4445
+iter step 19050, train loss 0.0335, dev loss 1.4748, dev p 0.4514, dev r 0.4284, dev f1 0.4396
+iter step 19100, train loss 0.0364, dev loss 1.4466, dev p 0.4524, dev r 0.4303, dev f1 0.4410
+iter step 19150, train loss 0.0383, dev loss 1.4293, dev p 0.4569, dev r 0.4258, dev f1 0.4408
+iter step 19200, train loss 0.0378, dev loss 1.4299, dev p 0.4715, dev r 0.4186, dev f1 0.4435
+iter step 19250, train loss 0.0408, dev loss 1.4249, dev p 0.4480, dev r 0.4218, dev f1 0.4345
+iter step 19300, train loss 0.0442, dev loss 1.2977, dev p 0.4633, dev r 0.4194, dev f1 0.4403
+iter step 19350, train loss 0.0439, dev loss 1.3474, dev p 0.4516, dev r 0.4175, dev f1 0.4339
+iter step 19400, train loss 0.0408, dev loss 1.3977, dev p 0.4584, dev r 0.4286, dev f1 0.4430
+iter step 19450, train loss 0.0390, dev loss 1.3814, dev p 0.4532, dev r 0.4286, dev f1 0.4405
+>> early stop
