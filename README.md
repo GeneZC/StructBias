@@ -19,6 +19,7 @@ We anticipate the code will be out * **in one week** *. -->
     - [Requirements](#requirements)
     - [Training](#training)
     - [Evaluation](#evaluation)
+  - [Case Study](#case-study)
   - [Bugs or Questions?](#bugs-or-questions)
   - [Citation](#citation)
 
@@ -53,13 +54,17 @@ We provide example training scripts for MuG with and without the structural adap
 * `--tag_size`: Number of types of tags
 * `--use_adapter`: Use the adapter or not.
 
-**Experiment Logs**
+**Experiment logs**
 
 For results in the paper, we use Nvidia V100 GPUs with CUDA 11. Using different types of devices or different versions of CUDA/other softwares may lead to slightly different performance. The experiment logs can be found in `experiments` for sanity checks.
 
 ### Evaluation
 
 We also provide example training scripts, for example `scripts/run_google_bert_eval.sh`, where arguments share similar meaning as those in training ones.
+
+## Case Study
+
+We present a few cases of recommedation reason extraction from comments, as shown in `cases/rec.txt`.
 
 ## Bugs or Questions?
 
