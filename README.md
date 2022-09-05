@@ -1,6 +1,6 @@
 ## StructBias
 
-This repository contains code and data for COLING 2022 paper titled [Structural Bias For Aspect Sentiment Triplet Extraction]().
+This repository contains code and data for COLING 2022 paper titled [Structural Bias For Aspect Sentiment Triplet Extraction](https://arxiv.org/abs/2209.00820).
 
 **************************** **Updates** ****************************
 
@@ -10,6 +10,7 @@ This repository contains code and data for COLING 2022 paper titled [Structural 
 Wait a minute! The authors are working day and night 💪, to make the code and models available.
 We anticipate the code will be out * **in one week** *. -->
 
+* 9/5/22: We released our paper. Check it out!
 * 9/1/22: We released our code and data. Check it out!
 
 ## Quick Links
