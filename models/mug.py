@@ -9,7 +9,7 @@ from data_utils import convert_indices_to_tags, convert_tags_to_spans
 
 class MuG(nn.Module):
     def __init__(self, args, embedding):
-        super(MTL, self).__init__()
+        super(MuG, self).__init__()
         self.embed = embedding
 
         self.target_fc = nn.Linear(args.hidden_size, args.hidden_size)

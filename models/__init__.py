@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from models.mtl import MTL
+from models.mug import MuG
 
 MODEL_CLASS_MAP = {
     'mug': MuG,
