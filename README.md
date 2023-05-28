@@ -6,7 +6,7 @@ This repository contains code and data for COLING 2022 paper titled [Structural 
 
 <!-- Thanks for your interest in our repo! -->
 
-* 9/1/22: We released our paper, code, and data. Check it out!
+* 1/9/2022: We released our paper, code, and data. Check it out!
 
 ## Quick Links
 
